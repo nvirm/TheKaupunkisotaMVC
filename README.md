@@ -12,3 +12,5 @@ Includes:
 - List of Upcoming matches
 - Teams participating in the tournament/league
 - A convenient refresh button that only fetches the divs without reloading the whole page
+
+Theme of this Bootstrap-based page is called "Greyscale" by Startbootstrap. https://startbootstrap.com/template-overviews/grayscale/
