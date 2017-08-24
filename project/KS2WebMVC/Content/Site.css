@@ -1,0 +1,120 @@
+﻿/*body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Quick&Dirty*/
+@font-face {
+    font-family: 'bignoodletoo';
+    src: url('../fonts/bignoodletoo.woff') format('woff');
+}
+
+.owfont {
+    font-family: 'bignoodletoo';
+    font-size: 1.3em;
+}
+
+.owfont-med {
+    font-family: 'bignoodletoo';
+    font-size: 1.5em !important;
+}
+
+.owfont-big {
+    font-family: 'bignoodletoo';
+    font-size: 2.5em !important;
+}
+.xtrafont2 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.btn-default {
+    border: 1px solid #ff8500;
+    color: #ffffff;
+    background-color: #ff8500;
+}
+
+    .btn-default:focus, .btn-default:hover {
+        border: 1px solid #ffaa4d;
+        outline: 0;
+        color: #ffffff;
+        background-color: #ffaa4d
+    }
+
+a {
+    color: #ff8500;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+    a:focus, a:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+hr.style11 {
+    height: 6px;
+    background: url('../img/hr-11.png') repeat-x 0 0;
+    border: 0;
+}
+
+.table-bordered {
+    border: 1px dashed #dddddd;
+}
+
+    .table-bordered > thead > tr > th,
+    .table-bordered > tbody > tr > th,
+    .table-bordered > tfoot > tr > th,
+    .table-bordered > thead > tr > td,
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tfoot > tr > td {
+        border: 1px dashed #dddddd;
+    }
+
+.xtrafont3 {
+    font-family: 'Fira Mono', monospace;
+}
+
+/*panel*/
+.panel {
+    border-radius: 0px;
+    background-color: #000000;
+}
+.panel-heading{
+    padding:0;
+
+}
+.panel-body{
+    max-height:350px;
+    height:350px;
+    overflow-y:scroll;
+}
+
+.reloadbutton {
+    position: fixed;
+    Width: 100%;
+    bottom: 0;
+    z-index:1;
+}

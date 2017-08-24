@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ksBotSQL2ModelStoreContainer" CdmEntityContainer="ksBotSQL2Entities">
+    <EntitySetMapping Name="Match">
+      <EntityTypeMapping TypeName="ksBotSQL2Model.Match">
+        <MappingFragment StoreEntitySet="Match">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Matchcode" ColumnName="Matchcode" />
+          <ScalarProperty Name="Team1_id" ColumnName="Team1_id" />
+          <ScalarProperty Name="Team2_id" ColumnName="Team2_id" />
+          <ScalarProperty Name="ObsDraftURL" ColumnName="ObsDraftURL" />
+          <ScalarProperty Name="ManageDraftURL" ColumnName="ManageDraftURL" />
+          <ScalarProperty Name="WinnerTeam_id" ColumnName="WinnerTeam_id" />
+          <ScalarProperty Name="closed" ColumnName="closed" />
+          <ScalarProperty Name="added" ColumnName="added" />
+          <ScalarProperty Name="started" ColumnName="started" />
+          <ScalarProperty Name="modified" ColumnName="modified" />
+          <ScalarProperty Name="projectedstarttime" ColumnName="projectedstarttime" />
+          <ScalarProperty Name="Team1_division" ColumnName="Team1_division" />
+          <ScalarProperty Name="Team2_division" ColumnName="Team2_division" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MatchTeams">
+      <EntityTypeMapping TypeName="ksBotSQL2Model.MatchTeams">
+        <MappingFragment StoreEntitySet="MatchTeams">
+          <ScalarProperty Name="Team_id" ColumnName="Team_id" />
+          <ScalarProperty Name="Match_id" ColumnName="Match_id" />
+          <ScalarProperty Name="TeamId1Points" ColumnName="TeamId1Points" />
+          <ScalarProperty Name="TeamId2Points" ColumnName="TeamId2Points" />
+          <ScalarProperty Name="TeamId1DraftURL" ColumnName="TeamId1DraftURL" />
+          <ScalarProperty Name="TeamId2DraftURL" ColumnName="TeamId2DraftURL" />
+          <ScalarProperty Name="TeamId1CaptainUserId" ColumnName="TeamId1CaptainUserId" />
+          <ScalarProperty Name="TeamId2CaptainUserId" ColumnName="TeamId2CaptainUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Param">
+      <EntityTypeMapping TypeName="ksBotSQL2Model.Param">
+        <MappingFragment StoreEntitySet="Param">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParamName" ColumnName="ParamName" />
+          <ScalarProperty Name="ParamInfo" ColumnName="ParamInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Scoreboard">
+      <EntityTypeMapping TypeName="ksBotSQL2Model.Scoreboard">
+        <MappingFragment StoreEntitySet="Scoreboard">
+          <ScalarProperty Name="rndLoses" ColumnName="rndLoses" />
+          <ScalarProperty Name="rndDraws" ColumnName="rndDraws" />
+          <ScalarProperty Name="rndWins" ColumnName="rndWins" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Team_id" ColumnName="Team_id" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StdPoints" ColumnName="StdPoints" />
+          <ScalarProperty Name="GamesPlayed" ColumnName="GamesPlayed" />
+          <ScalarProperty Name="RndWon" ColumnName="RndWon" />
+          <ScalarProperty Name="RndLose" ColumnName="RndLose" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ksBotSQL2Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Team">
+      <EntityTypeMapping TypeName="ksBotSQL2Model.Team">
+        <MappingFragment StoreEntitySet="Team">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="CaptainUser_id" ColumnName="CaptainUser_id" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="Eliminated" ColumnName="Eliminated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="ksBotSQL2Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="discord_id" ColumnName="discord_id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="BtagId" ColumnName="BtagId" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="CurrentSR" ColumnName="CurrentSR" />
+          <ScalarProperty Name="APICurrentSR" ColumnName="APICurrentSR" />
+          <ScalarProperty Name="APIHero1" ColumnName="APIHero1" />
+          <ScalarProperty Name="APIHero2" ColumnName="APIHero2" />
+          <ScalarProperty Name="APIHero3" ColumnName="APIHero3" />
+          <ScalarProperty Name="APIKillAvg" ColumnName="APIKillAvg" />
+          <ScalarProperty Name="APIDeathAvg" ColumnName="APIDeathAvg" />
+          <ScalarProperty Name="APIHealAvg" ColumnName="APIHealAvg" />
+          <ScalarProperty Name="Team_id" ColumnName="Team_id" />
+          <ScalarProperty Name="added" ColumnName="added" />
+          <ScalarProperty Name="attending" ColumnName="attending" />
+          <ScalarProperty Name="APITimePlayed" ColumnName="APITimePlayed" />
+          <ScalarProperty Name="APIAvatarURL" ColumnName="APIAvatarURL" />
+          <ScalarProperty Name="APIWinRate" ColumnName="APIWinRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MatchUsers" TypeName="ksBotSQL2Model.MatchUsers" StoreEntitySet="MatchUsers">
+      <EndProperty Name="Match">
+        <ScalarProperty Name="id" ColumnName="Match_id" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="id" ColumnName="User_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TeamCaptainUser" TypeName="ksBotSQL2Model.TeamCaptainUser" StoreEntitySet="TeamCaptainUser">
+      <EndProperty Name="Team">
+        <ScalarProperty Name="id" ColumnName="Team_id" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="id" ColumnName="User_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
