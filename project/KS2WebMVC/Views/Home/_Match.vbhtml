@@ -44,11 +44,10 @@
                     <td>
                         @If item.WinnerTeam_id IsNot Nothing Then
                             @Html.DisplayFor(Function(modelItem) item.MatchTeams().Where(Function(m) m.Team_id = item.WinnerTeam_id).FirstOrDefault().Team.CityName) @*Teamname, muutetaanko tulokseksi muodossa koti - vieras? (matchteams where id = matchid)*@
-                        If Not IsNothing(item.MatchTeams().FirstOrDefault().TeamId1Points) Then
+                        End If
+                        @If Not IsNothing(item.MatchTeams().FirstOrDefault().TeamId1Points) Then
                             @<span>@Html.DisplayFor(Function(m) item.MatchTeams().FirstOrDefault().TeamId1Points) - @Html.DisplayFor(Function(m) item.MatchTeams().FirstOrDefault().TeamId2Points)</span>
                             End If
-
-                        End If
                     </td>
                     <td class="hidden-xs">
                         @If (item.started = True) Then
